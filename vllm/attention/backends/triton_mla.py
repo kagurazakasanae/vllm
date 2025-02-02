@@ -257,7 +257,7 @@ class TritonMLAMetadata(MLACommonMetadata):
 
     num_prefill_tokens: int
 
-    num_kv_splits: int = 4  # TODO(lucas) add heuristic
+    num_kv_splits: int = 16  # TODO(lucas) add heuristic # for AMD
     attn_logits: Optional[torch.Tensor] = None
     req_idx: Optional[torch.Tensor] = None
 
